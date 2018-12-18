@@ -5,6 +5,7 @@ public class Rescuer {
     double availableMoney;
 
     //adding other proprieties which may help in the game development;
+
     String otherAnimals;
     int numberOfAnimals;
     boolean kids;

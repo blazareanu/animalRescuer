@@ -17,10 +17,18 @@ public class App
     firstAnimal.moodStatus = 4;
     firstAnimal.favoriteFood = "Pedigree Junior";
     firstAnimal.favoriteActivity = "Fetch";
+    firstAnimal.furColor = "black";
+    firstAnimal.likeToys = false;
+    firstAnimal.eyeColor = "blue";
+    firstAnimal.accesories = "bow";
 
             Rescuer firstRescuer = new Rescuer();
      firstRescuer.name = "Mike";
      firstRescuer.availableMoney = 8500.62;
+     firstRescuer.otherAnimals = "a cat";
+     firstRescuer.numberOfAnimals = 2;
+     firstRescuer.kids = true;
+     firstRescuer.partOfAssociation = true;
 
             AnimalFeed firstAnimalFeed = new AnimalFeed();
       firstAnimalFeed.name = "Pedigree Junior";
@@ -43,6 +51,11 @@ public class App
 
         System.out.println(firstAnimal.name);
         System.out.println(firstAnimal.age);
+
+             Toys firstToy = new Toys ();
+        firstToy.name = "Gicu";
+        firstToy.category = "Cars";
+        firstToy.degreeOfLovingToy = 10;
 
 
     }

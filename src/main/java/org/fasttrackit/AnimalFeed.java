@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
 public class AnimalFeed {
+
     String name;
     double price;
     double quantity;
