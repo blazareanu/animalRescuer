@@ -4,4 +4,5 @@ public class Predators {
     String name;
     int degreeOfViolence;
     int degreeOfFear;
+
 }
