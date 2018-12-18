@@ -9,4 +9,5 @@ public class RecreationalActivity {
     boolean outdoor;
     boolean otherParticipants;
 
+
 }

@@ -45,7 +45,6 @@ public class App
         System.out.println(firstAnimal.age);
 
 
-
     }
 }
 
