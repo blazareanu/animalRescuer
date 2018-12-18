@@ -42,7 +42,7 @@ public class App
     firstGame.vet = "Jane";
 
         System.out.println(firstAnimal.name);
-
+        System.out.println(firstAnimal.age);
 
 
 
