@@ -13,7 +13,7 @@ public class AnimalFeed {
     String type;
     String flavor;
     int popularity;
-    String benefits;
+    String benefit;
 
 
 }
