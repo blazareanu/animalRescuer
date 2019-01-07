@@ -1,11 +1,10 @@
 package org.fasttrackit;
 
-public class RecreationalActivity {
+public class RecreationalActivity extends Interest{
     String name;
 
     //adding other proprieties which may help in the game development;
-    String belefit;
-    int frequency;
+    String benefit;
     boolean outdoor;
     boolean otherParticipants;
 

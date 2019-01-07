@@ -57,6 +57,8 @@ public class App
         firstToy.category = "Cars";
         firstToy.degreeOfLovingToy = 10;
 
+        System.out.println(firstAnimalFeed.expirationDate);
+
 
     }
 }

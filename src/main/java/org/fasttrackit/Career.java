@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class Career {
+public class Career extends Interest{
     String position;
     double numberOfYears;
 
