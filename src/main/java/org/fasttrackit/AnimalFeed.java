@@ -15,5 +15,4 @@ public class AnimalFeed {
     int popularity;
     String benefit;
 
-
 }
