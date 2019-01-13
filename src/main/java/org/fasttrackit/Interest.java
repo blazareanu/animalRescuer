@@ -1,9 +1,9 @@
 package org.fasttrackit;
 
 public class Interest {
-    String name;
-    int frecquency;
-    int degreeOfHappiness;
+   private String name;
+   private int frecquency;
+   private int degreeOfHappiness;
 
     public Interest(String name) {
         this.name = name;
@@ -23,5 +23,29 @@ public class Interest {
         System.out.println("grade of interest: " + attraction);
         return attraction;
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getFrecquency() {
+        return frecquency;
+    }
+
+    public void setFrecquency(int frecquency) {
+        this.frecquency = frecquency;
+    }
+
+    public int getDegreeOfHappiness() {
+        return degreeOfHappiness;
+    }
+
+    public void setDegreeOfHappiness(int degreeOfHappiness) {
+        this.degreeOfHappiness = degreeOfHappiness;
     }
 }

@@ -1,9 +1,9 @@
 package org.fasttrackit;
 
 public class People {
-    String name;
-    boolean loveAnimal;
-    double age;
+   private String name;
+    private boolean loveAnimal;
+   private double age;
 
     public People(String name) {
               this.name = name;
@@ -20,5 +20,29 @@ public class People {
         System.out.println("Am I safe? " + ratePerson);
         return ratePerson;
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isLoveAnimal() {
+        return loveAnimal;
+    }
+
+    public void setLoveAnimal(boolean loveAnimal) {
+        this.loveAnimal = loveAnimal;
+    }
+
+    public double getAge() {
+        return age;
+    }
+
+    public void setAge(double age) {
+        this.age = age;
     }
 }
