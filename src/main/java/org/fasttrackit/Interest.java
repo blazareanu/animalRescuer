@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
 public class Interest {
+    String name;
     int frecquency;
     int degreeOfHappiness;
 

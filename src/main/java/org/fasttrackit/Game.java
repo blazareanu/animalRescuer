@@ -1,9 +1,9 @@
 package org.fasttrackit;
 
 public class Game {
-    String rescuer;
-    String dog;
-    String vet;
+    Rescuer rescuer;
+    Animal animal;
+
 
     //adding other proprieties which may help in the game development;
 
@@ -11,6 +11,8 @@ public class Game {
     String recreationalActivity;
     String otherAnimals;
     String otherInteractions;
+    String dog;
+    String vet;
 
 
 

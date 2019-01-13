@@ -1,8 +1,7 @@
 package org.fasttrackit;
 
-public class Family extends Interest{
+public class Family {
     String name;
     int degreeOfAttachement;
     String relationship;
-
 }

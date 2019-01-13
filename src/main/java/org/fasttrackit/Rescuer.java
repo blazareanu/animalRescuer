@@ -1,10 +1,10 @@
 package org.fasttrackit;
 
-public class Rescuer {
-    String name;
+public class Rescuer extends People{
+
     double availableMoney;
 
-    //adding other proprieties which may help in the game development;
+    //adding other properties which may help in the game development;
 
     String otherAnimals;
     int numberOfAnimals;

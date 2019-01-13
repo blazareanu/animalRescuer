@@ -10,7 +10,7 @@ public class Animal {
     String favoriteFood;
     String favoriteActivity;
 
-    //adding other proprieties which may help in the game development;
+    //adding other properties which may help in the game development;
     String furColor;
     boolean likeToys;
     String eyeColor;

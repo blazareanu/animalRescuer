@@ -1,12 +1,14 @@
 package org.fasttrackit;
 
+import static java.lang.Boolean.TRUE;
+
 /**;
  * Hello world!
  *
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static People main(String[] args )
     {
 
             Animal firstAnimal = new Animal();
@@ -44,10 +46,6 @@ public class App
        firstVet.name = "Jane";
        firstVet.specialization = "E.N.T";
 
-            Game firstGame = new Game();
-    firstGame.dog = "Charlie";
-    firstGame.rescuer = "Mike";
-    firstGame.vet = "Jane";
 
         System.out.println(firstAnimal.name);
         System.out.println(firstAnimal.age);
@@ -59,7 +57,16 @@ public class App
 
         System.out.println(firstAnimalFeed.expirationDate);
 
+        People helper1 = new People();
+        helper1.name= "Person 1";
+        helper1.loveAnimal= TRUE;
+        helper1.age= 30;
+        double safe = helper1.lifeHelpers(10,10);
+        System.out.println("I think I'm safe if her/his rating is: " + helper1);
+        return helper1;
+
 
     }
+
 }
 

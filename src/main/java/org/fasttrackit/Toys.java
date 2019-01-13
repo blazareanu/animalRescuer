@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
-public class Toys {
-    String name;
+public class Toys extends Interest {
+
     String category;
     int degreeOfLovingToy;
 
