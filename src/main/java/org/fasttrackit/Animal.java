@@ -16,6 +16,12 @@ public class Animal {
     String eyeColor;
     String accesories;
 
+    public Animal(String name) {
+            this.name = name;
+            System.out.println("But first: name");
+
+    }
+
 
 
 }

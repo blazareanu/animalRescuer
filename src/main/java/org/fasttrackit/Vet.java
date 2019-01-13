@@ -10,4 +10,7 @@ public class Vet  extends People{
     double age;
 
 
+    public Vet(String name) {
+        super(name);
+    }
 }

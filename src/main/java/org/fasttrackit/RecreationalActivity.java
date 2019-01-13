@@ -9,4 +9,8 @@ public class RecreationalActivity extends Interest{
     boolean otherParticipants;
 
 
+    public RecreationalActivity(String name, int degreeOfHappiness) {
+        super(name, degreeOfHappiness);
+    }
+
 }

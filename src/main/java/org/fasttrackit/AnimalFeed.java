@@ -15,4 +15,9 @@ public class AnimalFeed {
     int popularity;
     String benefit;
 
+    public AnimalFeed(String name) {
+        this.name = name;
+        System.out.println("But first: name");
+
+    }
 }

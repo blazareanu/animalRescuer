@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class Rescuer extends People{
+public class Rescuer extends People {
 
     double availableMoney;
 
@@ -12,5 +12,7 @@ public class Rescuer extends People{
     boolean partOfAssociation;
 
 
-
+    public Rescuer(String name) {
+        super(name);
+    }
 }

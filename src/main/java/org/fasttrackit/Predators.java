@@ -5,4 +5,10 @@ public class Predators {
     int degreeOfViolence;
     int degreeOfFear;
 
+
+        public Predators(String name, int degreeOfFear) {
+            this.name = name;
+            this.degreeOfFear = degreeOfFear;
+
+    }
 }
