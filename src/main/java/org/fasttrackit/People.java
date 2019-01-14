@@ -7,7 +7,6 @@ public class People {
 
     public People(String name) {
               this.name = name;
-        System.out.println("But first: name");
 
     }
 

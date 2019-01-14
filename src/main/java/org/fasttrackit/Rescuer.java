@@ -2,14 +2,14 @@ package org.fasttrackit;
 
 public class Rescuer extends People {
 
-   private double availableMoney;
+    private double availableMoney;
 
     //adding other properties which may help in the game development;
 
-    private   String otherAnimals;
-   private int numberOfAnimals;
-   private boolean kids;
-   private boolean partOfAssociation;
+    private String otherAnimals;
+    private int numberOfAnimals;
+    private boolean kids;
+    private boolean partOfAssociation;
 
 
     public Rescuer(String name) {
@@ -54,5 +54,24 @@ public class Rescuer extends People {
 
     public void setPartOfAssociation(boolean partOfAssociation) {
         this.partOfAssociation = partOfAssociation;
+    }
+
+    //as per instruction, will return a void type
+
+    public void firstFeeding(String animal, String food) {
+        System.out.println(getName() + " just gave some " + food + " to " + animal);
+        String eat = animal + " eats " + food;
+        System.out.println(eat);
+
+    }
+
+// it won't return a void type
+
+    public String firstActivity(String name4Rescuer, String name4Activ, String name4Animal) {
+        System.out.println(name4Rescuer + " just went out to " + name4Activ + name4Animal);
+        String activity = name4Rescuer + name4Activ + name4Animal;
+        System.out.println(activity);
+
+        return activity;
     }
 }

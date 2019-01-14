@@ -18,7 +18,6 @@ public class Animal {
 
     public Animal(String name) {
             this.name = name;
-            System.out.println("But first: name");
 
     }
 
