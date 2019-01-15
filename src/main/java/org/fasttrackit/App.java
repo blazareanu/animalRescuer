@@ -3,9 +3,8 @@ package org.fasttrackit;
 import static java.lang.Boolean.TRUE;
 
 
-public class App 
-{
-    public static void main(String[] args ) {
+public class App {
+    public static void main(String[] args) {
 
         Animal firstAnimal = new Animal("Bruno");
         firstAnimal.setAge(7);
@@ -59,23 +58,38 @@ public class App
 
         //H4, POINT 5, SUB-POINT 1
 
-        Rescuer feed1 = new Rescuer ("John");
+        Rescuer feed1 = new Rescuer("John");
         feed1.setName("John");
-        Rescuer firstResc = new Rescuer ("John");
-        Animal firstAnim = new Animal ("Chaika");
-        AnimalFeed firstFood= new AnimalFeed("Purina");
+        Rescuer firstResc = new Rescuer("John");
+        Animal firstAnim = new Animal("Chaika");
+        AnimalFeed firstFood = new AnimalFeed("Purina");
 
         System.out.println(firstResc + " just gave some " + firstFood + " to " + firstAnim);
 
-      //H4, POINT 5, SUB-POINT 3
+        //H4, POINT 5, SUB-POINT 3
         Rescuer activity1 = new Rescuer("Mike");
         Rescuer nameResc2 = new Rescuer("Mike");
-        RecreationalActivity nameActiv2 = new RecreationalActivity("walks",6);
-        Animal nameAnim = new Animal ("Brian");
-        String activ = activity1.firstActivity("Mike"," walk ","Brian");
+        RecreationalActivity nameActiv2 = new RecreationalActivity("walks", 6);
+        Animal nameAnim = new Animal("Brian");
+        String activ = activity1.firstActivity("Mike", " walk ", "Brian");
         System.out.println(activ);
 
-    }
 
+        //H5. P2
+       Cat firstFellow = new Cat("Nala");
+        firstFellow.mood(9, 8, 10, 6, 10);
+
+
+        Dog secondFellow = new Dog("Katyusha");
+        secondFellow.mood(10,10,10,10,10);
+
+        Racoon thirdFellow = new Racoon("Vivian");
+        thirdFellow.mood(8,8,10,10,10);
+
+        Otter fourthFellow = new Otter("Christina");
+        fourthFellow.mood(10,10,10,9,7);
+
+
+    }
 }
 

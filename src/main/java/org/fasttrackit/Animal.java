@@ -2,6 +2,11 @@ package org.fasttrackit;
 
 public class Animal {
     String name;
+    String moodCat;
+    String moodDog;
+    String moodRacoon;
+    String moodOtter;
+
     // i've used double for age in order to express both years and months
    private double age;
    private int healthStatus;
@@ -108,4 +113,20 @@ public class Animal {
     public void setAccesories(String accesories) {
         this.accesories = accesories;
     }
+
+    //H5: Overriding method
+
+
+
+    public double mood (int hunger, int health, int boredom, int fear, int awareness) {
+        System.out.println(" The parameteres of the mood are the following: " + " hunger " + hunger + " health " + health + " boredom " + boredom + " fear " + fear
+                + " awareness " + awareness);
+
+        int score = hunger + health + boredom + fear + awareness;
+        System.out.println(" The score of this fellow regarding the happiness meter is:  " + score + " which means that she is HAPPY and he will" );
+        return score;
+
+    }
+
+
 }
