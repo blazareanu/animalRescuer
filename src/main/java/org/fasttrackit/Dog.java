@@ -14,7 +14,7 @@ public class Dog extends Animal {
       String moodDog = "bounce";
 
         int score = hunger + health + boredom + fear + awareness;
-        System.out.println(" The score of this fellow regarding the happiness meter is:  " + score + " which means that he is HAPPY and she will " + moodDog);
+        System.out.println(" The score of this fellow regarding the happiness meter is:  " + score + " which means that she is HAPPY and she will " + moodDog);
         return score;
 
     }

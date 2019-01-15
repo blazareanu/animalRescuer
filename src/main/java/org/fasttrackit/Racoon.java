@@ -14,7 +14,7 @@ public class Racoon extends Animal {
         String moodRacoon = "clap";
 
         int score = hunger + health + boredom + fear + awareness;
-        System.out.println(" The score of this fellow regarding the happiness meter is:  " + score + " which means that he is HAPPY and she will " + moodRacoon);
+        System.out.println(" The score of this fellow regarding the happiness meter is:  " + score + " which means that she is HAPPY and she will " + moodRacoon);
         return score;
     }
 }

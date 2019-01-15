@@ -14,7 +14,7 @@ public class Cat extends Animal {
             String moodCat = "purrs";
 
             int score = hunger + health + boredom + fear + awareness;
-            System.out.println(" The score of this fellow regarding the happiness meter is:  " + score + " which means that he is HAPPY and she will " + moodCat);
+            System.out.println(" The score of this fellow regarding the happiness meter is:  " + score + " which means that she is HAPPY and she will " + moodCat);
             return score;
     }
 }
