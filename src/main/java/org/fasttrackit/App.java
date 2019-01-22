@@ -1,8 +1,5 @@
 package org.fasttrackit;
 
-import static java.lang.Boolean.TRUE;
-
-
 public class App {
     public static void main(String[] args) {
 
@@ -76,20 +73,36 @@ public class App {
 
 
         //H5. P2
-       Cat firstFellow = new Cat("Nala");
-        firstFellow.mood(9, 8, 10, 6, 10);
+        Cat firstFellow = new Cat("Nala");
+        System.out.println(firstFellow.mood(9, 8, 10, 6, 10));
 
 
         Dog secondFellow = new Dog("Katyusha");
-        secondFellow.mood(10,10,10,10,10);
+        System.out.println(secondFellow.mood(10, 10, 10, 10, 10));
+
 
         Racoon thirdFellow = new Racoon("Vivian");
-        thirdFellow.mood(8,8,10,10,10);
+        System.out.println(thirdFellow.mood(8, 8, 10, 10, 10));
+
 
         Otter fourthFellow = new Otter("Christina");
-        fourthFellow.mood(10,10,10,9,7);
+        System.out.println(fourthFellow.mood(10, 10, 10, 9, 7));
 
 
+        //H6. P1
+
+        Animal firstFellowCat = new Cat("Nala");
+        System.out.println(((Cat) firstFellowCat).mood(1, 8, 10, 6, 10));
+
+
+        Animal secondFellowDog = new Dog("Katyusha");
+        System.out.println(((Dog) secondFellowDog).mood(10, 10, 10, 10, 10));
+
+        Animal thirdFellowRacoon = new Racoon("Vivian");
+        System.out.println(((Racoon) thirdFellowRacoon).mood(9, 8, 10, 10, 10));
+
+        Animal fourthFellowOtter = new Otter("Christina");
+        System.out.println(((Otter) fourthFellowOtter).mood(10, 10, 10, 9, 7));
     }
 }
 
