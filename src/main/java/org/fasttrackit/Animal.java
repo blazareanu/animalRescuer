@@ -21,6 +21,8 @@ public class Animal {
    private String eyeColor;
    private String accesories;
 
+
+
     public Animal(String name) {
             this.name = name;
 
@@ -129,4 +131,24 @@ public class Animal {
     }
 
 
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", moodCat='" + moodCat + '\'' +
+                ", moodDog='" + moodDog + '\'' +
+                ", moodRacoon='" + moodRacoon + '\'' +
+                ", moodOtter='" + moodOtter + '\'' +
+                ", age=" + age +
+                ", healthStatus=" + healthStatus +
+                ", hungerStatus=" + hungerStatus +
+                ", moodStatus=" + moodStatus +
+                ", favoriteFood='" + favoriteFood + '\'' +
+                ", favoriteActivity='" + favoriteActivity + '\'' +
+                ", furColor='" + furColor + '\'' +
+                ", likeToys=" + likeToys +
+                ", eyeColor='" + eyeColor + '\'' +
+                ", accesories='" + accesories + '\'' +
+                '}';
+    }
 }

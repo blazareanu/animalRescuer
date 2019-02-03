@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 public class App {
-    public static void main(String[] args) {
+    public static <sout> void main(String[] args) {
 
         Animal firstAnimal = new Animal("Bruno");
         firstAnimal.setAge(7);
@@ -53,23 +53,25 @@ public class App {
         System.out.println("I think I'm safe if her/his rating is: " + helper1);
 
 
-        //H4, POINT 5, SUB-POINT 1
+        //H4, POINT 5, subsection 1&2
 
-        Rescuer feed1 = new Rescuer("John");
-        feed1.setName("John");
+
         Rescuer firstResc = new Rescuer("John");
         Animal firstAnim = new Animal("Chaika");
         AnimalFeed firstFood = new AnimalFeed("Purina");
 
+        firstResc.getName();
+        firstAnim.getName();
+        firstFood.getName();
+
         System.out.println(firstResc + " just gave some " + firstFood + " to " + firstAnim);
 
-        //H4, POINT 5, SUB-POINT 3
-        Rescuer activity1 = new Rescuer("Mike");
-        Rescuer nameResc2 = new Rescuer("Mike");
-        RecreationalActivity nameActiv2 = new RecreationalActivity("walks", 6);
-        Animal nameAnim = new Animal("Brian");
-        String activ = activity1.firstActivity("Mike", " walk ", "Brian");
-        System.out.println(activ);
+
+        //H4, POINT 5, subsection 3&4
+        RecreationalActivity firstActiv = new RecreationalActivity("fetch", 10);
+
+        firstActiv.getName();
+        System.out.println(firstResc + " went out to play " + firstActiv + "with " + firstAnim);
 
 
         //H5. P2
@@ -103,6 +105,11 @@ public class App {
 
         Animal fourthFellowOtter = new Otter("Christina");
         System.out.println(((Otter) fourthFellowOtter).mood(10, 10, 10, 9, 7));
+
+
+        //H6. P2
+
+
     }
 }
 

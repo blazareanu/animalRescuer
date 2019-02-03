@@ -17,9 +17,9 @@ public class AnimalFeed {
 
     public AnimalFeed(String name) {
         this.name = name;
-        System.out.println("But first: name");
 
     }
+
 
     public String getName() {
         return name;
@@ -91,5 +91,21 @@ public class AnimalFeed {
 
     public void setBenefit(String benefit) {
         this.benefit = benefit;
+    }
+
+
+    @Override
+    public String toString() {
+        return "AnimalFeed{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                ", expirationDate=" + expirationDate +
+                ", stockAvailability=" + stockAvailability +
+                ", type='" + type + '\'' +
+                ", flavor='" + flavor + '\'' +
+                ", popularity=" + popularity +
+                ", benefit='" + benefit + '\'' +
+                '}';
     }
 }

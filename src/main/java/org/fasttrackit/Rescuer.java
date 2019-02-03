@@ -10,6 +10,9 @@ public class Rescuer extends People {
     private int numberOfAnimals;
     private boolean kids;
     private boolean partOfAssociation;
+    private double feed;
+    private double gradeOfSatisfaction;
+    private double initialHungerLvl = 30;
 
 
     public Rescuer(String name) {
@@ -56,22 +59,58 @@ public class Rescuer extends People {
         this.partOfAssociation = partOfAssociation;
     }
 
+    public double getFeed() {
+        return feed;
+    }
+
+    public void setFeed(double feed) {
+        this.feed = feed;
+    }
+
+    public double getGradeOfSatisfaction() {
+        return gradeOfSatisfaction;
+    }
+
+    public void setGradeOfSatisfaction(double gradeOfSatisfaction) {
+        this.gradeOfSatisfaction = gradeOfSatisfaction;
+    }
+
+    public double getInitialHungerLvl() {
+        return initialHungerLvl;
+    }
+
+    public void setInitialHungerLvl(double initialHungerLvl) {
+        this.initialHungerLvl = initialHungerLvl;
+    }
+
+
     //as per instruction, will return a void type
 
-    public void firstFeeding(String animal, String food) {
-        System.out.println(getName() + " just gave some " + food + " to " + animal);
-        String eat = animal + " eats " + food;
-        System.out.println(eat);
+    //H4, point 5, subsection 1& 2
+
+
+    public void feed(Animal animal, AnimalFeed food) {
+        System.out.println(getName() + " just gave some " + food.getName() + " to " + animal.getName());
+    }
+
+    // H4, point 5, subsection 3& 4
+
+    public void activity(Animal animal, RecreationalActivity recreationalActivity) {
+        System.out.println(getName() + " just went out to play " + recreationalActivity.getName() +" with "+ animal.getName());
+
 
     }
 
-// it won't return a void type
 
-    public String firstActivity(String name4Rescuer, String name4Activ, String name4Animal) {
-        System.out.println(name4Rescuer + " just went out to " + name4Activ + name4Animal);
-        String activity = name4Rescuer + name4Activ + name4Animal;
-        System.out.println(activity);
+    //H6
+    public double initialHungerLvl(Animal animal, AnimalFeed food) {
+        System.out.println(getName() + " just gave some " + food.getName() + " to " + animal.getName());
+        initialHungerLvl--;
+        System.out.println(initialHungerLvl);
+        return initialHungerLvl;
 
-        return activity;
+
     }
+
 }
+

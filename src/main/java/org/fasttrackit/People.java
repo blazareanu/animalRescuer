@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 public class People {
-   private String name;
+       private String name;
     private boolean loveAnimal;
    private double age;
 
@@ -20,6 +20,8 @@ public class People {
         return ratePerson;
 
     }
+    Animal animal =   new Animal("Chaika");
+    AnimalFeed food = new AnimalFeed("Purina");
 
     public String getName() {
         return name;
@@ -45,4 +47,14 @@ public class People {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return "People{" +
+                "name='" + name + '\'' +
+                ", loveAnimal=" + loveAnimal +
+                ", age=" + age +
+                ", animal=" + animal +
+                ", food=" + food +
+                '}';
+    }
 }
