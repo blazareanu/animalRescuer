@@ -107,7 +107,20 @@ public class App {
         System.out.println(((Otter) fourthFellowOtter).mood(10, 10, 10, 9, 7));
 
 
-        //H6. P2
+        //H6, point 2, subsection 1
+
+        int newHungerLevel = firstAnimal.setHungerStatus(20);
+        System.out.println("Initial hunger level is: " + newHungerLevel);
+
+        newHungerLevel--;
+        System.out.println("The new hunger level is: " + newHungerLevel);
+
+        //H6, point 2, subsection 2
+        int newHappinessLevel = firstAnim.setMoodStatus(50);
+        System.out.println("Initial hepiness level is: " + newHappinessLevel);
+
+        newHappinessLevel--;
+        System.out.println("The new happiness level is: " + newHappinessLevel);
 
 
     }

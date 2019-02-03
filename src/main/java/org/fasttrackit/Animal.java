@@ -56,16 +56,18 @@ public class Animal {
         return hungerStatus;
     }
 
-    public void setHungerStatus(int hungerStatus) {
+    public int setHungerStatus(int hungerStatus) {
         this.hungerStatus = hungerStatus;
+        return hungerStatus;
     }
 
     public int getMoodStatus() {
         return moodStatus;
     }
 
-    public void setMoodStatus(int moodStatus) {
+    public int setMoodStatus(int moodStatus) {
         this.moodStatus = moodStatus;
+        return moodStatus;
     }
 
     public String getFavoriteFood() {

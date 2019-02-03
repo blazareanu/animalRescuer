@@ -96,21 +96,25 @@ public class Rescuer extends People {
     // H4, point 5, subsection 3& 4
 
     public void activity(Animal animal, RecreationalActivity recreationalActivity) {
-        System.out.println(getName() + " just went out to play " + recreationalActivity.getName() +" with "+ animal.getName());
-
-
+        System.out.println(getName() + " just went out to play " + recreationalActivity.getName() + " with " + animal.getName());
     }
 
 
-    //H6
-    public double initialHungerLvl(Animal animal, AnimalFeed food) {
-        System.out.println(getName() + " just gave some " + food.getName() + " to " + animal.getName());
-        initialHungerLvl--;
-        System.out.println(initialHungerLvl);
-        return initialHungerLvl;
-
-
+    //H6, point 2, subsection 1
+    public int hungerLevel(Animal firstAnim, AnimalFeed firstFood) {
+        firstAnim.setHungerStatus(20);
+        int newHungerLevel = firstAnim.getHungerStatus();
+        return newHungerLevel;
     }
+
+    //H6, point 2, subsection 2
+
+    public int entertain(Animal firstAnim, RecreationalActivity firstActiv) {
+        firstAnim.setMoodStatus(50);
+        int newHappinessLevel = firstAnim.getMoodStatus();
+        return newHappinessLevel;
+    }
+
 
 }
 
